@@ -13,7 +13,7 @@ Clean
 
 `$ make clean`
 
-Or just run the pre-compiled `server.exe` file like:
+Or just run the pre-compiled `server.exe` file from src like:
 
 `$ .\server.exe`
 
