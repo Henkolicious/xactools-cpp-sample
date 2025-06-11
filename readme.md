@@ -3,6 +3,7 @@ Random library used:
 https://github.com/yhirose/cpp-httplib
 
 Target OS win-x64.
+
 `$` denotes it's a CLI command.
 
 To compile it on your own, use the make file - but then you might need to adjust the patch to the `OPENSSL` tool.
