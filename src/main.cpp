@@ -11,10 +11,9 @@ bool is_authenticated(const httplib::Request &req)
 int main(void)
 {
     int port = 5000;
-    // generated self signed development certificate
-    httplib::Server ssl_server;
+    httplib::Server server;
 
-    ssl_server
+    server
         .set_logger([](const httplib::Request &req, const httplib::Response &res)
         {
             std::cout << "[" << req.method << "] " << req.path << " " << res.status << std::endl; 
@@ -39,8 +38,8 @@ int main(void)
             res.status = 200; 
         });
 
-    std::cout << "Server listening on localhost:" << port << std::endl;
+    std::cout << "Server listening on 0.0.0.0:" << port << std::endl;
     std::cout << "Press Ctrl+C to stop." << std::endl;
 
-    ssl_server.listen("localhost", port);
+    server.listen("0.0.0.0", port);
 }
