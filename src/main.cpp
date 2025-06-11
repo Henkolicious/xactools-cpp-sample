@@ -10,9 +10,9 @@ bool is_authenticated(const httplib::Request &req)
 
 int main(void)
 {
-    int port = 5555;
+    int port = 5000;
     // generated self signed development certificate
-    httplib::SSLServer ssl_server("certificates/server.crt", "certificates/server.key");
+    httplib::Server ssl_server;
 
     ssl_server
         .set_logger([](const httplib::Request &req, const httplib::Response &res)
