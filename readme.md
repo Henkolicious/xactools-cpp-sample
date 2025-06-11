@@ -14,9 +14,11 @@ Clean
 
 `$ make clean`
 
-Or just run the pre-compiled `server.exe` file from src like:
+Currently a linker problem with openssl
 
-`$ .\server.exe`
+~~Or just run the pre-compiled `server.exe` file from src like:~~
+
+~~`$ .\server.exe`~~
 
 Use whatever client you want (insomnia, postman, curl, httprepl , ...).
 
