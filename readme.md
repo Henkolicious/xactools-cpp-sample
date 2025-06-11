@@ -14,7 +14,7 @@ Clean
 
 `$ make clean`
 
-Currently a linker problem with openssl for static binary.
+Currently a linker problem with openssl for a static binary.
 
 ~~Or just run the pre-compiled `server.exe` file from src like:~~
 
